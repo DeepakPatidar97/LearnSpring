@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student" class="com.springcore.Student">
+		<property name="studentId" value="143"/>
+		<property name="studentName" value="Priya Meri Jaan"/>
+		<property name="studentAddress" ref="address"/>
+	</bean>
+	
+	<bean id="address" class="com.springcore.Address">
+		<constructor-arg name="houseNumber">
+			<list>
+				<value>89</value>
+				<value>75</value>
+			</list>
+		</constructor-arg>
+		
+		<constructor-arg name="city">
+			<set>
+				<value>Mahetwada</value>
+				<value>Lohari</value>
+			</set>	
+		</constructor-arg>
+		<constructor-arg name="state">
+			<props>
+				<prop key="MP">india</prop>
+				<prop key="US">Australia</prop>
+			</props>
+		</constructor-arg>
+		
+	</bean>
+</beans>
