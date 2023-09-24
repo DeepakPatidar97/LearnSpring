@@ -1,16 +1,16 @@
-package com.springcore.App3GameSpringBean;
+package com.springcore.App4GameAppComponentandCompontscan;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class MarioGame implements GameConsole {
+public class SuperContraGame implements GameConsole{
 	
 	public String up() {
 		return "jump";
 	}
 	
 	public String down() {
-		return "inside hole";
+		return "sheet";
 	}
 	
 	public String left() {
@@ -18,6 +18,7 @@ public class MarioGame implements GameConsole {
 	}
 	
 	public String right() {
-		return "shoot";
+		return "run";
 	}
+	
 }

@@ -1,7 +1,5 @@
 package com.springcore.App2BasicJava;
 
-import java.util.Arrays;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
@@ -21,7 +19,9 @@ public class HelloWorldSpringBoot {
 		
 		
 		//All beans 
-		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+		for (String string : context.getBeanDefinitionNames()) {
+			System.out.println(string);
+		}
 		((AbstractApplicationContext) context).close();
 	}
 }

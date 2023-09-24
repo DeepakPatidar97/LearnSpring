@@ -1,6 +1,10 @@
-package com.springcore.App3GameSpringBean;
+package com.springcore.App4GameAppComponentandCompontscan;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
+@Component
+@Primary
 public class PacMan implements GameConsole{
 
 	
@@ -21,7 +25,6 @@ public class PacMan implements GameConsole{
 		return "left";
 	}
 
-	
 	public String right() {
 		// TODO Auto-generated method stub
 		return "right";

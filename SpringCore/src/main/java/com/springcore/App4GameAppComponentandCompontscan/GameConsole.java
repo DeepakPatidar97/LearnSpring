@@ -1,6 +1,8 @@
-package com.springcore.App3GameSpringBean;
+package com.springcore.App4GameAppComponentandCompontscan;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public interface GameConsole {
 	public String up();
 	
