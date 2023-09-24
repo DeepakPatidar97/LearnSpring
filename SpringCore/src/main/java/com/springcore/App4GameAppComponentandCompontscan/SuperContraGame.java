@@ -1,8 +1,10 @@
 package com.springcore.App4GameAppComponentandCompontscan;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
+@Qualifier("SuperContraGameQualifier")
 public class SuperContraGame implements GameConsole{
 	
 	public String up() {
