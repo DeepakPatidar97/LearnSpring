@@ -3,7 +3,7 @@ package com.springcore.App3GameSpringBean;
 
 public class PacMan implements GameConsole{
 
-	
+	//demo
 	public String up() {
 		// TODO Auto-generated method stub
 		return "up";
